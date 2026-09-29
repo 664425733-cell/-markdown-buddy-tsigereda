@@ -1,0 +1,41 @@
+---
+title: "Script Documentation"
+output: html_document
+---
+
+# Purpose
+This R script performs basic data analysis using tidyverse tools.  
+It loads data, cleans it, and produces summary statistics and visualizations.
+
+# Inputs
+- Raw dataset (e.g., `data.csv`)
+- Required R packages:
+  - tidyverse
+  - ggplot2
+  - dplyr
+
+# Outputs
+- Cleaned dataset
+- Summary statistics
+- Plots (histograms, scatterplots, etc.)
+- Analysis report
+
+# Example Code
+
+```r
+# Load packages
+library(tidyverse)
+
+# Read data
+data <- read.csv("data.csv")
+
+# Clean data
+clean_data <- data %>%
+  filter(!is.na(value))
+
+# Summary statistics
+summary(clean_data)
+```
+
+# Notes
+This documentation was improved using AI formatting suggestions.
